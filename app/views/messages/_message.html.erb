@@ -1,0 +1,13 @@
+    <div class="event" >
+                <div class="content">
+                <% if(message.user.name == @current_user.name)%>
+                    <div class="me-msg">
+                    <em><%= message.user.name %></em>: <%= message.body %>
+                    </div>
+                <% else %>
+                    <div class="summary">
+                    <em><%= message.user.name %></em>: <%= message.body %>
+                    </div>
+                <% end %>
+                </div>
+            </div>

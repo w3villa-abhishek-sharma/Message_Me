@@ -1,0 +1,30 @@
+<div class="ui small inverted menu">
+  <div class="ui container">
+  
+
+  <%= link_to "Chatroom" ,root_path, class: "active item"%>
+  
+  <div class="right menu">
+    <div class="ui dropdown item">
+      Account <i class="dropdown icon"></i>
+      <div class="menu">
+<% if loggedin? %>
+        <%= link_to "Logout", logout_path, method: :delete,class: "item",style: "background-color: #d95c26 !important;" %>
+        <%else%>
+        <%= link_to "Log in" , login_path , class: "item",style: "background-color: #d95c26 !important;" %>
+
+        <a class="item">Signup</a>
+        <% end %>
+      </div>
+    </div>
+    <div class="item">
+    <% if !loggedin? %>
+              <%= link_to "Log in" , login_path , class: "ui primary button",style: "background-color: #d95c26 !important;" %>
+   <% else %>
+                 <%= link_to "Logout", logout_path, method: :delete, class: "ui primary button",style: "background-color: #d95c26 !important;" %>
+    <% end %>
+    </div>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+@import 'semantic-ui';
+
+
+.chatbox {
+    height: 450px;
+}
+
+.bn-on {
+    outline: none;
+    border: none;
+}
+
+#messages {
+    overflow: auto;
+}
+
+.summary{
+    width: 50%;
+    height: 45px;
+    padding: 10px;
+    border-radius: 10px;
+    color: #000 !important;
+    background: #fcb698;
+}
+.me-msg{
+    float: right;
+    width: 50%;
+    color: #fff !important;
+    height: 45px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #d95c26;
+}
+.ui.inverted.pointing.menu .active.item:after {
+    background: #d95c26 !important;
+}
